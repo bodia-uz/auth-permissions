@@ -1,0 +1,34 @@
+{
+  "name": "auth-permissions",
+  "version": "1.0.0",
+  "description": "AuthPermissions",
+  "main": "lib/AuthPermissions.js",
+  "module": "src/AuthPermissions.s",
+  "scripts": {
+    "build": "babel src --out-dir lib --ignore '**/*.test.js'",
+    "prettier": "prettier 'src/**/*.js' --write",
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.betlab.com/sport/auth-permissions"
+  },
+  "author": "",
+  "license": "BETLAB",
+  "homepage": "https://git.betlab.com/sport/auth-permissions",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "husky": "0.13.4",
+    "jest": "20.0.4",
+    "lint-staged": "4.0.0",
+    "prettier": "1.4.4"
+  }
+}
