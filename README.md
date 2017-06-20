@@ -13,8 +13,8 @@ const authPermissions = new AuthPermissions();
 
 # Define permissions
 ```js
-authPermissions.define( 'anonymous', () => !authService.isAuthenticated() );
-authPermissions.define( 'events.remove', () => authService.hasPermission('events.remove'));
+authPermissions.define('anonymous', () => !authService.isAuthenticated());
+authPermissions.define('events.remove', () => authService.hasPermission('events.remove'));
 
 authPermissions.defineMany(['events.remove', 'events.add', 'events.change'], 
   permissionName => authService.hasPermission(permissionName)
