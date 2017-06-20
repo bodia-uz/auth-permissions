@@ -8,7 +8,8 @@
     "build": "babel src --out-dir lib --ignore '**/*.test.js'",
     "prettier": "prettier 'src/**/*.js' --write",
     "test": "jest",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepare": "rm -rf ./lib && npm run build"
   },
   "lint-staged": {
     "*.js": [
