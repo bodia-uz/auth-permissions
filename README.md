@@ -1,8 +1,10 @@
 
+<!--
 # Install
 ```
 npm install auth-permissions —save
 ```
+-->
 
 # Create permissions store
 ```js
